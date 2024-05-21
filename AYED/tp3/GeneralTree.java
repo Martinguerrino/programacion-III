@@ -222,6 +222,64 @@ public class GeneralTree<T> {
 	}
 
 	
+	public boolean EsAncestro(T a, T b)
+	{
+		System.out.println(getData());
+		if(this.getData()==a)
+		{
+			boolean esB=BusquedaDescendiente(b);
+			if(esB)
+				return true;
+		}
+		for (GeneralTree<T> child:this.getChildren()) 
+		{
+			boolean es =child.EsAncestro(a,b);
+			if(es)
+			{
+				return true;
+			}
+		}
+		return false;
+		
+	}
+	public boolean BusquedaDescendiente(T b)
+	{
+		System.out.println(getData());
+		if(this.getData()==b)
+		{
+			return true;
+		}
+		List<GeneralTree<T>> children = this.getChildren();
+		for (GeneralTree<T> child: children) 
+		{
+			boolean es= child.BusquedaDescendiente(b);
+			if(es)
+			{
+				return true;
+			}
+		}
+		return false;
+		
+	}
+	
+	public static void main(String[] args) 
+	{
+		GeneralTree<String> a1 = new GeneralTree<String>("1");
+		List<GeneralTree<String>> children2 = new LinkedList<GeneralTree<String>>();
+		children2.add(new GeneralTree<String>("21"));
+		children2.add(new GeneralTree<String>("22"));
+		children2.add(new GeneralTree<String>("23"));
+		GeneralTree<String> a2 = new GeneralTree<String>("2", children2);
+		List<GeneralTree<String>> children3 = new LinkedList<GeneralTree<String>>();
+		children3.add(new GeneralTree<String>("31"));
+		children3.add(new GeneralTree<String>("32"));
+		GeneralTree<String> a3 = new GeneralTree<String>("3", children3);
+		List<GeneralTree<String>> childen = new LinkedList<GeneralTree<String>>();
+		childen.add(a1);childen.add(a2);childen.add(a3);
+		GeneralTree<String> a = new GeneralTree<String>("0", childen);
+		a.PorNiveles();
+		System.out.println(a.EsAncestro("0", "2"));
+	}
 	
 		
 	
