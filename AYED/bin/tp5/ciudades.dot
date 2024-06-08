@@ -1,0 +1,10 @@
+digraph ciudades {
+    "New York" -> "Los Angeles" [label="5"];
+    "New York" -> "Chicago" [label="2"];
+    "Los Angeles" -> "Houston" [label="4"];
+    "Chicago" -> "Phoenix" [label="7"];
+    "Houston" -> "Philadelphia" [label="3"];
+    "Phoenix" -> "San Antonio" [label="1"];
+    "Philadelphia" -> "New York" [label="6"];
+    "San Antonio" -> "Chicago" [label="8"];
+}

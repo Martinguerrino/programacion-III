@@ -1,0 +1,44 @@
+digraph ciudades {
+    "Buenos Aires" -> "Santiago" [label="3"];
+    "Buenos Aires" -> "Asunción" [label="6"];
+    "Buenos Aires" -> "Lima" [label="5"];
+    "Santiago" -> "Madrid" [label="4"];
+    "Santiago" -> "Bogotá" [label="2"];
+    "Asunción" -> "Caracas" [label="7"];
+    "Caracas" -> "São Paulo" [label="8"];
+    "Madrid" -> "México D.F." [label="9"];
+    "Lima" -> "Rio de Janeiro" [label="4"];
+    "Bogotá" -> "Buenos Aires" [label="3"];
+    "México D.F." -> "Lima" [label="5"];
+    "São Paulo" -> "Santiago" [label="6"];
+    "Rio de Janeiro" -> "Caracas" [label="7"];
+    "Rio de Janeiro" -> "Madrid" [label="3"];
+}
+ /*
+        Graph<String> ciudades = new AdjListGraph<>();
+        Vertex<String> v1 = ciudades.createVertex("Buenos Aires");
+        Vertex<String> v2 = ciudades.createVertex("Santiago");
+        Vertex<String> v3 = ciudades.createVertex("Asunción");
+        Vertex<String> v4 = ciudades.createVertex("Caracas");
+        Vertex<String> v5 = ciudades.createVertex("Madrid");
+        Vertex<String> v6 = ciudades.createVertex("Lima");
+        Vertex<String> v7 = ciudades.createVertex("Bogotá");
+        Vertex<String> v8 = ciudades.createVertex("México D.F.");
+        Vertex<String> v9 = ciudades.createVertex("São Paulo");
+        Vertex<String> v10 = ciudades.createVertex("Rio de Janeiro");
+
+        ciudades.connect(v1, v2, 3); //"Buenos Aires", "Santiago"
+        ciudades.connect(v1, v3, 6); //"Buenos Aires", "Asunción"
+        ciudades.connect(v1, v6, 5); //"Buenos Aires", "Lima"
+        ciudades.connect(v2, v5, 4); //"Santiago", "Madrid"
+        ciudades.connect(v2, v7, 2); //"Santiago", "Bogotá"
+        ciudades.connect(v3, v4, 7); //"Asunción", "Caracas"
+        ciudades.connect(v4, v9, 8); //"Caracas", "São Paulo"
+        ciudades.connect(v5, v8, 9); //"Madrid", "México D.F."
+        ciudades.connect(v6, v10, 4); //"Lima", "Rio de Janeiro"
+        ciudades.connect(v7, v1, 3); //"Bogotá", "Buenos Aires"
+        ciudades.connect(v8, v6, 5); //"México D.F.", "Lima"
+        ciudades.connect(v9, v2, 6); //"São Paulo", "Santiago"
+        ciudades.connect(v10, v4, 7); //"Rio de Janeiro", "Caracas"
+        ciudades.connect(v10, v5, 3); //"Rio de Janeiro", "Madrid"
+        */

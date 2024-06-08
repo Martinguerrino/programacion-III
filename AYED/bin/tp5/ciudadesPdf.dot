@@ -1,0 +1,43 @@
+digraph G {
+    "Buenos Aires" -> "Santiago" [label="3"];//corregido
+    "Buenos Aires" -> "Asunción" [label="6"];//corregido
+    "Santiago" -> "Roma" [label="4"];//corregido
+    "Asunción" -> "Madrid" [label="10"];//corregido
+    "Asunción" -> "Caracas" [label="2"];//corregido
+    "Roma" -> "Tokio" [label="80"];//corregido
+    "Caracas" -> "Madrid" [label="2"];//corregido
+    "Caracas" -> "Tokio" [label="20"];//corregido
+    "París" -> "Roma" [label="4"];//corregido
+    "París" -> "Madrid" [label="65"];//corregido
+    "París" -> "Tokio" [label="35"];//corregido
+    "Tokio" -> "Buenos Aires" [label="10"];//corregido
+    "Madrid"-> "Tokio"[label="60"]//corregido
+}
+/*su grafo es
+Graph<String> ciudades = new AdjListGraph<>();
+
+        // Crear los vértices
+        Vertex<String> v1 = ciudades.createVertex("Buenos Aires");
+        Vertex<String> v2 = ciudades.createVertex("Santiago");
+        Vertex<String> v3 = ciudades.createVertex("Roma");
+        Vertex<String> v4 = ciudades.createVertex("Asunción");
+        Vertex<String> v5 = ciudades.createVertex("Madrid");
+        Vertex<String> v6 = ciudades.createVertex("Caracas");
+        Vertex<String> v7 = ciudades.createVertex("Tokio");
+        Vertex<String> v8 = ciudades.createVertex("París");
+
+        // Conectar los vértices con sus pesos
+        ciudades.connect(v1, v2, 3);  // Buenos Aires - Santiago
+        ciudades.connect(v1, v4, 6);  // Buenos Aires - Asunción
+        ciudades.connect(v2, v3, 4);  // Santiago - Roma
+        ciudades.connect(v4, v5, 10); // Asunción - Madrid
+        ciudades.connect(v4, v6, 2);  // Asunción - Caracas
+        ciudades.connect(v3, v7, 80); // Roma - Tokio
+        ciudades.connect(v6, v5, 2);  // Caracas - Madrid
+        ciudades.connect(v6, v7, 20); // Caracas - Tokio
+        ciudades.connect(v8, v3, 4);  // París - Roma
+        ciudades.connect(v8, v5, 65); // París - Madrid
+        ciudades.connect(v8, v7, 35); // París - Tokio
+        ciudades.connect(v7, v1, 10); // Tokio - Buenos Aires
+        ciudades.connect(v5, v7, 60); // Madrid - Tokio
+        */
