@@ -1,0 +1,73 @@
+digraph G
+{
+    "Casa Caperucita" -> "Claro1" [label="3"];
+    "Claro1"->"Casa Caperucita"[label="3"];
+
+    "Casa Caperucita" -> "Claro2" [label="4"];
+    "Claro2"->"Casa Caperucita"[label="4"];
+
+    "Casa Caperucita" -> "Claro3" [label="4"];
+    "Claro3"->"Casa Caperucita"[label="4"];
+
+    "Claro2" -> "Claro1" [label="4"];
+    "Claro1"->"Claro2"[label="4"];
+
+    "Claro2" -> "Claro5" [label="11"];
+    "Claro5"->"Claro2"[label="11"];
+
+    "Claro1" -> "Claro5" [label="3"];
+    "Claro5"->"Claro1"[label="3"];
+
+    "Claro3" -> "Claro5" [label="15"];
+    "Claro5"->"Claro3"[label="15"];
+
+    "Claro2" -> "Claro4" [label="10"];
+    "Claro4"->"Claro2"[label="10"];
+
+    "Casa Abuelita" -> "Claro5" [label="4"];
+    "Claro5"->"Casa Abuelita"[label="4"];
+
+    "Claro4" -> "Casa Abuelita" [label="9"];
+    "Casa Abuelita"->"Claro4"[label="9"];
+}
+/*
+Graph<String> graph = new AdjListGraph<>();
+
+        Vertex<String> casaCaperucita = graph.createVertex("Casa Caperucita");
+        Vertex<String> claro1 = graph.createVertex("Claro1");
+        Vertex<String> claro2 = graph.createVertex("Claro2");
+        Vertex<String> claro3 = graph.createVertex("Claro3");
+        Vertex<String> claro4 = graph.createVertex("Claro4");
+        Vertex<String> claro5 = graph.createVertex("Claro5");
+        Vertex<String> casaAbuelita = graph.createVertex("Casa Abuelita");
+
+        graph.connect(casaCaperucita, claro1, 3);
+        graph.connect(claro1, casaCaperucita, 3);
+
+        graph.connect(casaCaperucita, claro2, 4);
+        graph.connect(claro2, casaCaperucita, 4);
+
+        graph.connect(casaCaperucita, claro3, 4);
+        graph.connect(claro3, casaCaperucita, 4);
+
+        graph.connect(claro2, claro1, 4);
+        graph.connect(claro1, claro2, 4);
+
+        graph.connect(claro2, claro5, 11);
+        graph.connect(claro5, claro2, 11);
+
+        graph.connect(claro1, claro5, 3);
+        graph.connect(claro5, claro1, 3);
+
+        graph.connect(claro3, claro5, 15);
+        graph.connect(claro5, claro3, 15);
+
+        graph.connect(claro2, claro4, 10);
+        graph.connect(claro4, claro2, 10);
+
+        graph.connect(casaAbuelita, claro5, 4);
+        graph.connect(claro5, casaAbuelita, 4);
+
+        graph.connect(claro4, casaAbuelita, 9);
+        graph.connect(casaAbuelita, claro4, 9);
+*/

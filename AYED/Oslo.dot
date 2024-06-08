@@ -1,0 +1,58 @@
+digraph G {
+    "Holmenkollen" -> "Parque Vigeland" [label="30"];//bien
+    "Parque Vigeland" -> "Holmenkollen" [label="30"];
+
+    "Parque Vigeland" -> "Galería Nacional" [label="10"];//bien
+    "Galería Nacional" -> "Parque Vigeland" [label="10"];
+
+    "Parque Vigeland" -> "FolkMuseum" [label="20"];//bien
+    "FolkMuseum" -> "Parque Vigeland" [label="20"];
+
+    "Parque Botánico" -> "Ayuntamiento" [label="10"];//bien
+    "Ayuntamiento" -> "Parque Botánico" [label="10"];
+
+    
+
+    "Palacio Real" -> "Ayuntamiento" [label="5"];//bien
+    "Ayuntamiento" -> "Palacio Real" [label="5"];
+
+    "Palacio Real" -> "FolkMuseum" [label="5"];//bien
+    "FolkMuseum" -> "Palacio Real" [label="5"];
+
+    "FolkMuseum" -> "Museo Fram" [label="5"];
+    "Museo Fram" -> "FolkMuseum" [label="5"];//bien
+
+    "Museo Fram" -> "Museo del Barco Polar" [label="5"];//bien
+    "Museo del Barco Polar" -> "Museo Fram" [label="5"];//bien
+
+    "Museo Vikingo" -> "Museo del Barco Polar" [label="5"];
+    "Museo del Barco Polar" -> "Museo Vikingo" [label="5"];//bien
+
+    "FolkMuseum" -> "Akker Brigge" [label="30"];//bien
+    "Akker Brigge" -> "FolkMuseum" [label="30"];
+
+    "Museo Vikingo" -> "Akker Brigge" [label="30"];//bien
+    "Akker Brigge" -> "Museo Vikingo" [label="30"];
+
+    "Ayuntamiento" -> "Akker Brigge" [label="20"];//bien
+    "Akker Brigge" -> "Ayuntamiento" [label="20"];
+
+    "Galería Nacional" -> "Parque Botánico" [label="15"];//bien
+    "Parque Botánico" -> "Galería Nacional" [label="15"];
+
+    "Parque Botánico" -> "Museo Munch" [label="1"];
+    "Museo Munch" -> "Parque Botánico" [label="1"];//bien
+
+    "Ayuntamiento" -> "El Tigre" [label="15"];//bien
+    "El Tigre" -> "Ayuntamiento" [label="15"];
+
+    "El Tigre" -> "Museo Munch" [label="15"];//bien
+    "Museo Munch" -> "El Tigre" [label="15"];
+
+    "El Tigre" -> "La Opera" [label="5"];//bien
+    "La Opera" -> "El Tigre" [label="5"];
+
+    "La Opera" -> "Fortaleza Akershus" [label="10"];//bien
+    "Fortaleza Akershus" -> "La Opera" [label="10"];
+
+}

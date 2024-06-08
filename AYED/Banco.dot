@@ -1,0 +1,23 @@
+digraph G {
+    "Juan" -> "Maria" [label="10"];
+    "Maria" -> "Pedro" [label="15"];
+    "Pedro" -> "Ana" [label="20"];
+    "Ana" -> "Luis" [label="25"];
+    "Luis" -> "Sofia" [label="30"];
+    "Sofia" -> "Carlos" [label="35"];
+    "Carlos" -> "Marta" [label="40"];
+    "Marta" -> "Laura" [label="45"];
+    "Laura" -> "Pablo" [label="50"];
+    "Pablo" -> "Juan" [label="55"];
+    
+    "Juan" -> "Luis" [label="12"];
+    "Maria" -> "Sofia" [label="14"];
+    "Pedro" -> "Carlos" [label="16"];
+    "Ana" -> "Marta" [label="18"];
+    "Luis" -> "Laura" [label="20"];
+    "Sofia" -> "Pablo" [label="22"];
+    "Carlos" -> "Juan" [label="24"];
+    "Marta" -> "Maria" [label="26"];
+    "Laura" -> "Pedro" [label="28"];
+    "Pablo" -> "Ana" [label="30"];
+}
